@@ -3,56 +3,56 @@ const shortcutBank = {
     {
       action: "Copy the selected text.",
       windows: { keys: ["control", "c"], label: "Ctrl + C" },
-      mac: { keys: ["meta", "c"], label: "âŒ˜ + C" }
+      mac: { keys: ["meta", "c"], label: "⌘˜ + C" }
     },
     {
       action: "Paste what you copied.",
       windows: { keys: ["control", "v"], label: "Ctrl + V" },
-      mac: { keys: ["meta", "v"], label: "âŒ˜ + V" }
+      mac: { keys: ["meta", "v"], label: "⌘˜ + V" }
     },
     {
       action: "Cut the selected text.",
       windows: { keys: ["control", "x"], label: "Ctrl + X" },
-      mac: { keys: ["meta", "x"], label: "âŒ˜ + X" }
+      mac: { keys: ["meta", "x"], label: "⌘˜ + X" }
     },
     {
       action: "Undo your last action.",
       windows: { keys: ["control", "z"], label: "Ctrl + Z" },
-      mac: { keys: ["meta", "z"], label: "âŒ˜ + Z" }
+      mac: { keys: ["meta", "z"], label: "⌘˜ + Z" }
     },
     {
       action: "Select everything on the page or in the document.",
       windows: { keys: ["control", "a"], label: "Ctrl + A" },
-      mac: { keys: ["meta", "a"], label: "âŒ˜ + A" }
+      mac: { keys: ["meta", "a"], label: "⌘˜ + A" }
     }
   ],
   2: [
     {
       action: "Find a word on this page.",
       windows: { keys: ["control", "f"], label: "Ctrl + F" },
-      mac: { keys: ["meta", "f"], label: "âŒ˜ + F" }
+      mac: { keys: ["meta", "f"], label: "⌘˜ + F" }
     },
     {
       action: "Save your current document.",
       windows: { keys: ["control", "s"], label: "Ctrl + S" },
-      mac: { keys: ["meta", "s"], label: "âŒ˜ + S" }
+      mac: { keys: ["meta", "s"], label: "⌘˜ + S" }
     },
     {
       action: "Open a new browser tab.",
       windows: { keys: ["control", "t"], label: "Ctrl + T" },
-      mac: { keys: ["meta", "t"], label: "âŒ˜ + T" },
+      mac: { keys: ["meta", "t"], label: "⌘˜ + T" },
       mode: "builder"
     },
     {
       action: "Close the current browser tab.",
       windows: { keys: ["control", "w"], label: "Ctrl + W" },
-      mac: { keys: ["meta", "w"], label: "âŒ˜ + W" },
+      mac: { keys: ["meta", "w"], label: "⌘˜ + W" },
       mode: "builder"
     },
     {
       action: "Refresh the current page.",
       windows: { keys: ["control", "r"], label: "Ctrl + R" },
-      mac: { keys: ["meta", "r"], label: "âŒ˜ + R" },
+      mac: { keys: ["meta", "r"], label: "⌘˜ + R" },
       mode: "builder"
     }
   ],
@@ -60,31 +60,31 @@ const shortcutBank = {
     {
       action: "Open Task Manager directly.",
       windows: { keys: ["control", "shift", "escape"], label: "Ctrl + Shift + Esc" },
-      mac: { keys: ["meta", "option", "escape"], label: "âŒ˜ + Option + Esc" },
+      mac: { keys: ["meta", "option", "escape"], label: "⌘˜ + Option + Esc" },
       mode: "builder"
     },
     {
       action: "Open the Run dialog.",
       windows: { keys: ["meta", "r"], label: "Windows + R" },
-      mac: { keys: ["meta", "space"], label: "âŒ˜ + Space" },
+      mac: { keys: ["meta", "space"], label: "⌘˜ + Space" },
       mode: "builder"
     },
     {
       action: "Open File Explorer.",
       windows: { keys: ["meta", "e"], label: "Windows + E" },
-      mac: { keys: ["meta", "option", "space"], label: "âŒ˜ + Option + Space" },
+      mac: { keys: ["meta", "option", "space"], label: "⌘˜ + Option + Space" },
       mode: "builder"
     },
     {
       action: "Lock your computer.",
       windows: { keys: ["meta", "l"], label: "Windows + L" },
-      mac: { keys: ["control", "meta", "q"], label: "Control + âŒ˜ + Q" },
+      mac: { keys: ["control", "meta", "q"], label: "Control + ⌘˜ + Q" },
       mode: "builder"
     },
     {
       action: "Switch to another open application.",
       windows: { keys: ["alt", "tab"], label: "Alt + Tab" },
-      mac: { keys: ["meta", "tab"], label: "âŒ˜ + Tab" },
+      mac: { keys: ["meta", "tab"], label: "⌘˜ + Tab" },
       mode: "builder"
     }
   ],
@@ -98,25 +98,25 @@ const shortcutBank = {
     {
       action: "You need to quickly search a long incident-response page for the word â€œmalware.â€",
       windows: { keys: ["control", "f"], label: "Ctrl + F" },
-      mac: { keys: ["meta", "f"], label: "âŒ˜ + F" },
+      mac: { keys: ["meta", "f"], label: "⌘˜ + F" },
       mode: "builder"
     },
     {
       action: "You are stepping away from a workstation containing sensitive information. Secure it immediately.",
       windows: { keys: ["meta", "l"], label: "Windows + L" },
-      mac: { keys: ["control", "meta", "q"], label: "Control + âŒ˜ + Q" },
+      mac: { keys: ["control", "meta", "q"], label: "Control + ⌘˜ + Q" },
       mode: "builder"
     },
     {
       action: "You are editing a configuration file and accidentally deleted an important line. Reverse your last action.",
       windows: { keys: ["control", "z"], label: "Ctrl + Z" },
-      mac: { keys: ["meta", "z"], label: "âŒ˜ + Z" },
+      mac: { keys: ["meta", "z"], label: "⌘˜ + Z" },
       mode: "builder"
     },
     {
       action: "You need to launch a Windows command by opening the Run dialog.",
       windows: { keys: ["meta", "r"], label: "Windows + R" },
-      mac: { keys: ["meta", "space"], label: "âŒ˜ + Space" },
+      mac: { keys: ["meta", "space"], label: "⌘˜ + Space" },
       mode: "builder"
     }
   ]
@@ -267,7 +267,7 @@ function displayKeyName(key) {
     control: "Ctrl",
     shift: "Shift",
     alt: "Alt / Option",
-    meta: platform === "mac" ? "âŒ˜ Cmd" : "Windows",
+    meta: platform === "mac" ? "⌘˜ Cmd" : "Windows",
     tab: "Tab",
     escape: "Esc",
     space: "Space"
@@ -337,7 +337,7 @@ function handleShortcut(event) {
   } else {
     streak = 0;
     score = Math.max(0, score - 15);
-    feedback.textContent = "INCORRECT â€” TRY AGAIN";
+    feedback.textContent = "INCORRECT ⌘” TRY AGAIN";
     feedback.className = "feedback incorrect";
     updateStats();
   }
