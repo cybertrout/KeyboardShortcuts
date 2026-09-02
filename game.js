@@ -297,7 +297,7 @@ function gradeBuilder() {
   } else {
     streak = 0;
     score = Math.max(0, score - 15);
-    feedback.textContent = "INCORRECT â€” ADJUST YOUR KEYS";
+    feedback.textContent = "INCORRECT” ADJUST YOUR KEYS";
     feedback.className = "feedback incorrect";
     updateStats();
   }
@@ -337,7 +337,7 @@ function handleShortcut(event) {
   } else {
     streak = 0;
     score = Math.max(0, score - 15);
-    feedback.textContent = "INCORRECT ⌘” TRY AGAIN";
+    feedback.textContent = "INCORRECT” TRY AGAIN";
     feedback.className = "feedback incorrect";
     updateStats();
   }
