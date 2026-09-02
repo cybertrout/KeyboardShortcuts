@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shortcut Sprint: Cyber Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="screen active">
+
+      <div class="eyebrow">CYBER SKILLS LAB</div>
+
+      <h1>Shortcut Sprint</h1>
+
+      <p class="subtitle">
+        Build the keyboard reflexes every future cybersecurity
+        professional needs.
+      </p>
+
+      <div class="level-grid">
+
+        <button class="level-card" data-level="1">
+          <span class="level-number">Level 1</span>
+          <strong>Everyday Essentials</strong>
+          <small>
+            Copy, paste, undo, select all, and more.
+          </small>
+        </button>
+
+        <button class="level-card" data-level="2">
+          <span class="level-number">Level 2</span>
+          <strong>Power User</strong>
+          <small>
+            Tabs, find, refresh, save, and browser workflow.
+          </small>
+        </button>
+
+        <button class="level-card" data-level="3">
+          <span class="level-number">Level 3</span>
+          <strong>Windows / Admin</strong>
+          <small>
+            Task Manager, Run, File Explorer,
+            lock screen, and switching apps.
+          </small>
+        </button>
+
+        <button class="level-card" data-level="4">
+          <span class="level-number">Level 4</span>
+          <strong>Cyber Challenge</strong>
+          <small>
+            Scenario-based shortcut missions.
+          </small>
+        </button>
+
+      </div>
+
+
+      <!-- GAME SETTINGS -->
+      <div class="settings">
+
+        <label>
+          Round length
+
+          <select id="round-length">
+            <option value="60">1 minute</option>
+            <option value="90" selected>90 seconds</option>
+            <option value="120">2 minutes</option>
+          </select>
+
+        </label>
+
+
+        <label>
+          Platform
+
+          <select id="platform">
+            <option value="windows" selected>
+              Windows / Chromebook
+            </option>
+
+            <option value="mac">
+              Mac
+            </option>
+
+          </select>
+
+        </label>
+
+      </div>
+
+
+      <p class="note">
+        Tip: Some browser shortcuts may trigger the browser itself.
+        This is part of the challenge!
+      </p>
+
+    </section>
+
+
+
+    <!-- GAME SCREEN -->
+    <section id="game-screen" class="screen">
+
+      <div class="topbar">
+
+        <div>
+          <span class="stat-label">SCORE</span>
+          <strong id="score">0</strong>
+        </div>
+
+        <div>
+          <span class="stat-label">STREAK</span>
+          <strong id="streak">0</strong>
+        </div>
+
+        <div>
+          <span class="stat-label">TIME</span>
+          <strong id="time">90</strong>
+        </div>
+
+      </div>
+
+
+      <div class="mission-card">
+
+        <div class="mission-meta">
+
+          <span id="level-label">
+            LEVEL 1
+          </span>
+
+          <span id="progress-label">
+            MISSION 1
+          </span>
+
+        </div>
+
+
+        <p class="mission-kicker">
+          YOUR MISSION
+        </p>
+
+
+        <h2 id="mission-text">
+          Copy the selected text.
+        </h2>
+
+
+        <div
+          id="shortcut-display"
+          class="shortcut-display"
+        >
+          PRESS THE SHORTCUT
+        </div>
+
+
+        <!-- Used for shortcuts that the browser
+             cannot safely detect -->
+        <div
+          id="builder"
+          class="builder hidden"
+          aria-label="Shortcut builder"
+        >
+
+          <div
+            id="builder-keys"
+            class="builder-keys"
+          ></div>
+
+          <button
+            id="submit-builder"
+            class="submit-builder"
+          >
+            Submit Shortcut
+          </button>
+
+        </div>
+
+
+        <!-- Correct / incorrect messages -->
+        <div
+          id="feedback"
+          class="feedback"
+          aria-live="polite"
+        ></div>
+
+
+        <!-- GAME CONTROLS -->
+        <div class="controls">
+
+          <button
+            id="hint-btn"
+            class="secondary"
+          >
+            Show Hint
+          </button>
+
+
+          <button
+            id="skip-btn"
+            class="secondary"
+          >
+            Skip
+          </button>
+
+
+          <button
+            id="quit-btn"
+            class="danger"
+          >
+            End Round
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- RESULTS SCREEN -->
+    <section id="results-screen" class="screen">
+
+      <div class="results-card">
+
+        <div class="eyebrow">
+          ROUND COMPLETE
+        </div>
+
+
+        <h2 id="results-title">
+          Mission Report
+        </h2>
+
+
+        <div
+          class="results-score"
+          id="final-score"
+        >
+          0
+        </div>
+
+
+        <p class="results-label">
+          POINTS
+        </p>
+
+
+        <div class="results-grid">
+
+          <div>
+            <span>Correct</span>
+            <strong id="correct-count">
+              0
+            </strong>
+          </div>
+
+
+          <div>
+            <span>Best Streak</span>
+            <strong id="best-streak">
+              0
+            </strong>
+          </div>
+
+
+          <div>
+            <span>Accuracy</span>
+            <strong id="accuracy">
+              0%
+            </strong>
+          </div>
+
+        </div>
+
+
+        <p id="results-message"></p>
+
+
+        <div class="controls">
+
+          <button id="play-again-btn">
+            Play Again
+          </button>
+
+
+          <button
+            id="menu-btn"
+            class="secondary"
+          >
+            Choose Another Level
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- GAME LOGIC -->
+  <script src="game.js"></script>
+
+</body>
+</html>
